@@ -1,46 +1,77 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo from "../assets/logo.png";
-import { Link } from "react-scroll";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link as ScrollLink, scroller } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const closeMenu = () => setNav(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavClick = (section) => {
+    console.log(`Navigating to section: ${section}`);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: section } });
+      closeMenu();
+    } else {
+      scroller.scrollTo(section, {
+        smooth: true,
+        duration: 500,
+        offset: -80,
+      });
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      scroller.scrollTo(location.state.scrollTo, {
+        smooth: true,
+        duration: 500,
+        offset: -80,
+      });
+      navigate(location.pathname); // Clear state to prevent continuous scrolling
+    }
+    closeMenu();
+  }, [location, location.state?.scrollTo, navigate]);
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div>
-        <a href="home">
+        <Link to="/">
           <img src={Logo} alt="Logo" style={{ width: "100px" }} />
-        </a>
+        </Link>
       </div>
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500} offset={-80}>
+          <ScrollLink to="home" smooth={true} duration={500} offset={-80}>
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500} offset={-80}>
+          <ScrollLink to="about" smooth={true} duration={500} offset={-80}>
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500} offset={-80}>
+          <ScrollLink to="skills" smooth={true} duration={500} offset={-80}>
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500} offset={-80}>
+          <ScrollLink to="work" smooth={true} duration={500} offset={-80}>
             Project
-          </Link>
+          </ScrollLink>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} offset={-80}>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-80}>
             Contact
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
 
@@ -49,66 +80,64 @@ const Navbar = () => {
       </div>
 
       <ul
-        className={
-          !nav
-            ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
-        }
+        className={`absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center transition-transform duration-300 ${
+          nav ? "transform translate-x-0" : "transform -translate-x-full"
+        }`}
       >
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
+          <ScrollLink
+            onClick={() => handleNavClick("home")}
             to="home"
             smooth={true}
             duration={500}
             offset={-80}
           >
             Home
-          </Link>
+          </ScrollLink>
         </li>
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
+          <ScrollLink
+            onClick={() => handleNavClick("about")}
             to="about"
             smooth={true}
             duration={500}
             offset={-80}
           >
             About
-          </Link>
+          </ScrollLink>
         </li>
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
+          <ScrollLink
+            onClick={() => handleNavClick("skills")}
             to="skills"
             smooth={true}
             duration={500}
             offset={-80}
           >
             Skills
-          </Link>
+          </ScrollLink>
         </li>
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
+          <ScrollLink
+            onClick={() => handleNavClick("work")}
             to="work"
             smooth={true}
             duration={500}
             offset={-80}
           >
             Work
-          </Link>
+          </ScrollLink>
         </li>
         <li className="py-6 text-4xl">
-          <Link
-            onClick={handleClick}
+          <ScrollLink
+            onClick={() => handleNavClick("contact")}
             to="contact"
             smooth={true}
             duration={500}
             offset={-80}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </li>
       </ul>
 
