@@ -6,7 +6,7 @@ const Contact = () => {
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4 pt-60"
     >
-      <div className="mt-20 md:mt-60">
+      <div>
         <form
           method="POST"
           action="https://getform.io/f/bqonvyeb"

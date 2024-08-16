@@ -14,7 +14,6 @@ const Navbar = () => {
   const location = useLocation();
 
   const handleNavClick = (section) => {
-    console.log(`Navigating to section: ${section}`);
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: section } });
       closeMenu();
@@ -35,7 +34,7 @@ const Navbar = () => {
         duration: 500,
         offset: -80,
       });
-      navigate(location.pathname); // Clear state to prevent continuous scrolling
+      navigate(location.pathname);
     }
     closeMenu();
   }, [location, location.state?.scrollTo, navigate]);
@@ -48,34 +47,39 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="hidden md:flex">
-        <li>
+        <li className="hover:text-pink-600 transition duration-300">
           <ScrollLink to="home" smooth={true} duration={500} offset={-80}>
             Home
           </ScrollLink>
         </li>
-        <li>
+        <li className="hover:text-pink-600 transition duration-300">
           <ScrollLink to="about" smooth={true} duration={500} offset={-80}>
             About
           </ScrollLink>
         </li>
-        <li>
+        <li className="hover:text-pink-600 transition duration-300">
           <ScrollLink to="skills" smooth={true} duration={500} offset={-80}>
             Skills
           </ScrollLink>
         </li>
-        <li>
-          <ScrollLink to="work" smooth={true} duration={500} offset={-80}>
-            Project
+        <li className="hover:text-pink-600 transition duration-300">
+          <ScrollLink to="experience" smooth={true} duration={500} offset={-80}>
+            Experience
           </ScrollLink>
         </li>
-        <li>
+        <li className="hover:text-pink-600 transition duration-300">
+          <ScrollLink to="work" smooth={true} duration={500} offset={-80}>
+            Projects
+          </ScrollLink>
+        </li>
+        <li className="hover:text-pink-600 transition duration-300">
           <ScrollLink to="contact" smooth={true} duration={500} offset={-80}>
             Contact
           </ScrollLink>
         </li>
       </ul>
 
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -84,7 +88,7 @@ const Navbar = () => {
           nav ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
       >
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
           <ScrollLink
             onClick={() => handleNavClick("home")}
             to="home"
@@ -95,7 +99,7 @@ const Navbar = () => {
             Home
           </ScrollLink>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
           <ScrollLink
             onClick={() => handleNavClick("about")}
             to="about"
@@ -106,7 +110,7 @@ const Navbar = () => {
             About
           </ScrollLink>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
           <ScrollLink
             onClick={() => handleNavClick("skills")}
             to="skills"
@@ -117,7 +121,18 @@ const Navbar = () => {
             Skills
           </ScrollLink>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
+          <ScrollLink
+            onClick={() => handleNavClick("experience")}
+            to="experience"
+            smooth={true}
+            duration={500}
+            offset={-80}
+          >
+            Experience
+          </ScrollLink>
+        </li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
           <ScrollLink
             onClick={() => handleNavClick("work")}
             to="work"
@@ -125,10 +140,10 @@ const Navbar = () => {
             duration={500}
             offset={-80}
           >
-            Work
+            Projects
           </ScrollLink>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl hover:text-pink-600 transition duration-300">
           <ScrollLink
             onClick={() => handleNavClick("contact")}
             to="contact"
@@ -145,7 +160,7 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-white transition duration-300"
               href="https://linkedin.com/in/uzαïr-šαεεd/"
               rel="noreferrer"
               target="_blank"
@@ -155,7 +170,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-white transition duration-300"
               href="https://github.com/uzairsaeed34"
               rel="noreferrer"
               target="_blank"
@@ -165,7 +180,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-white transition duration-300"
               href="mailto:uzarsaeed34k@gmail.com"
               rel="noreferrer"
               target="_blank"
@@ -175,7 +190,7 @@ const Navbar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
-              className="flex justify-between items-center w-full text-gray-300"
+              className="flex justify-between items-center w-full text-gray-300 hover:text-white transition duration-300"
               href="https://drive.google.com/file/d/1foXE9C8g1Xj-5ACmdla_g-Ys3nE4wMWY/view?usp=sharing"
               rel="noreferrer"
               target="_blank"
