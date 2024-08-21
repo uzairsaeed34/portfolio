@@ -3,15 +3,16 @@ import Proj3 from "../assets/projects/GadgetGlitz.png";
 import Proj4 from "../assets/projects/goldgym.png";
 import Proj5 from "../assets/projects/weatherapp.png";
 import Proj6 from "../assets/projects/car-rental.png";
-import Proj2 from "../assets/projects/textutils.png";
+import Proj7 from "../assets/projects/textutils.png";
+import Proj2 from "../assets/projects/reicpefinder.png";
 import Vid1 from "../assets/projects/vid1.mp4";
 import Vid2 from "../assets/projects/vid2.mp4";
 import Vid3 from "../assets/projects/vid3.mp4";
-
+import Vid4 from "../assets/projects/vid4.mp4";
 export const data = [
   {
     id: 1,
-    name: "Colossal Store-MERN",
+    name: "Colossal Store-FYP MERN",
     image: Proj1,
     github: "https://github.com/attabik-shah/Colossal-Store",
     live: "",
@@ -29,6 +30,16 @@ export const data = [
   },
   {
     id: 3,
+    name: "Deliciousss-React Js",
+    image: Proj2,
+    github: "https://github.com/uzairsaeed34/deliciousss",
+    live: "https://recipeefinderr.netlify.app/",
+    description:
+      "Deliciouss is a modern recipe finder app designed to make discovering new recipes easy and enjoyable. The app leverages a free API to provide users with a vast selection of recipes based on various criteria such as cuisine type, specific ingredients, or dish names. By utilizing React hooks for state management and API fetching, the app ensures a seamless and responsive user experience, making it quick and easy to find and explore different recipes. The app is styled using styled-components, allowing for modular and maintainable CSS that keeps the interface clean and visually appealing. To enhance the user experience, subtle animations were added using framer-motion, providing smooth transitions and interactions throughout the app. Deliciouss is a demonstration of my ability to build functional and visually engaging web applications by integrating APIs and using modern front-end technologies.",
+    video: Vid4,
+  },
+  {
+    id: 4,
     name: "GadgetGlitz-React JS-Strapi",
     image: Proj3,
     github: "https://github.com/uzairsaeed34/react-ecommerce",
@@ -38,7 +49,7 @@ export const data = [
       "Gadget Glitz is a sleek and modern e-commerce platform tailored for tech enthusiasts. Built using React JS for the frontend, Strapi for the backend, and SCSS for styling, the website delivers a smooth and visually appealing user experience. Gadget Glitz specializes in selling high-tech items, including Bluetooth headphones, speakers, smartwatches, and earbuds. The use of SCSS allows for a highly customizable and responsive design, ensuring that users can enjoy a seamless shopping experience across all devices. The integration of Strapi as the backend provides a powerful content management system that makes it easy to manage products, categories, and orders. React JS, with its component-based architecture, ensures that the site is fast, responsive, and easy to maintain. Whether users are browsing through the latest tech gadgets or searching for specific items, Gadget Glitz offers a user-friendly interface that simplifies the shopping process. The combination of modern web technologies ensures that Gadget Glitz not only meets the expectations of today’s tech-savvy consumers but also sets a high standard for online shopping in the tech space.",
   },
   {
-    id: 4,
+    id: 5,
     name: "GoldGym-React JS",
     image: Proj4,
     github: "https://github.com/uzairsaeed34/fitness-react",
@@ -46,8 +57,9 @@ export const data = [
     description:
       "GoldGym is a dynamic fitness platform designed to help users find and follow effective exercise routines. Built using React JS and Material UI, the website offers a clean and intuitive interface that allows users to easily explore a wide variety of exercises. The sleek design, powered by Material UI, ensures that the site is both visually appealing and user-friendly, making it easy for fitness enthusiasts of all levels to navigate. The website integrates an API from Rapid API to deliver comprehensive exercise information. Users can search for exercises based on specific body parts, equipment, or fitness goals, providing them with tailored workout routines that meet their needs. Whether you’re a beginner looking to start a fitness journey or an experienced athlete seeking to enhance your workout regimen, GoldGym offers a wealth of resources to support your fitness goals. The combination of React JS, Material UI, and a powerful API ensures that GoldGym delivers a modern and efficient solution for anyone looking to improve their physical health.",
   },
+
   {
-    id: 5,
+    id: 6,
     name: "Weather app-React JS",
     image: Proj5,
     github: "https://github.com/uzairsaeed34/React-weather-app",
@@ -57,13 +69,13 @@ export const data = [
       "The Weather App is a straightforward and efficient tool built with React JS, designed to provide users with real-time weather information. By utilizing an API from Rapid API, the app delivers accurate weather data for any location worldwide. Users can easily search for cities or regions and receive up-to-date information on temperature, humidity, wind speed, and weather conditions. The app's clean interface and responsive design ensure a seamless experience across all devices, making it a reliable resource for anyone needing quick and accessible weather updates.",
   },
   {
-    id: 6,
-    name: "Textutils-React JS",
-    image: Proj2,
+    id: 7,
+    name: "TextUtils-React JS",
+    image: Proj7,
     github: "https://github.com/uzairsaeed34/TextUtils-react-app",
     live: "",
-    description:
-      "Textutils is a versatile text manipulation tool developed using React JS. The application allows users to perform various text-related tasks such as converting text to uppercase or lowercase, counting words and characters, and removing extra spaces. Its clean and simple interface makes it easy for users to input and transform their text efficiently. With React JS at its core, Textutils is fast, responsive, and user-friendly, making it a handy tool for anyone needing quick and effective text processing. Textutils is designed with the user experience in mind, providing a range of functionalities that cater to different text editing needs. Whether you're preparing content for a professional document, formatting text for a blog, or simply cleaning up some notes, Textutils offers the tools you need in one place. The application is built to handle large volumes of text effortlessly, and its real-time processing ensures that changes are reflected immediately as you type. By leveraging the power of React JS, Textutils delivers a smooth and intuitive experience, making it an essential tool for writers, editors, and anyone who works with text on a regular basis.",
     video: Vid3,
+    description:
+      "Textutils is a versatile text manipulation app built with React JS, designed to provide users with a suite of tools for processing and analyzing text. The app offers a range of features such as converting text to uppercase or lowercase, counting words and characters, and more. React's component-based architecture ensures that the app is highly modular and easy to maintain, providing a fast and responsive user experience. Through Textutils, I have demonstrated my proficiency in React by effectively managing state and implementing various text processing features. The app's clean and intuitive interface showcases my ability to create user-friendly applications while leveraging the power of React to build efficient and scalable web solutions.",
   },
 ];
