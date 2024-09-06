@@ -5,6 +5,7 @@ import Proj5 from "../assets/projects/weatherapp.png";
 import Proj6 from "../assets/projects/car-rental.png";
 import Proj7 from "../assets/projects/textutils.png";
 import Proj2 from "../assets/projects/reicpefinder.png";
+import Proj8 from "../assets/projects/construction.png";
 import Vid1 from "../assets/projects/vid1.mp4";
 import Vid2 from "../assets/projects/vid2.mp4";
 import Vid3 from "../assets/projects/vid3.mp4";
@@ -40,6 +41,15 @@ export const data = [
   },
   {
     id: 4,
+    name: "Construction-React Js",
+    image: Proj8,
+    github: "https://github.com/uzairsaeed34/construction",
+    live: "https://maymar-builders.netlify.app/",
+    description:
+      "I developed a dynamic and visually appealing landing page for a construction company using React.js. The page showcases the company's services, projects, and team, while a dedicated blog section provides valuable industry insights. I incorporated captivating animations to enhance user engagement and created a responsive design for optimal viewing across various devices. By leveraging React and animation libraries, I demonstrated my ability to build modern and interactive web experiences.",
+  },
+  {
+    id: 5,
     name: "GadgetGlitz-React JS-Strapi",
     image: Proj3,
     github: "https://github.com/uzairsaeed34/react-ecommerce",
@@ -49,7 +59,7 @@ export const data = [
       "Gadget Glitz is a sleek and modern e-commerce platform tailored for tech enthusiasts. Built using React JS for the frontend, Strapi for the backend, and SCSS for styling, the website delivers a smooth and visually appealing user experience. Gadget Glitz specializes in selling high-tech items, including Bluetooth headphones, speakers, smartwatches, and earbuds. The use of SCSS allows for a highly customizable and responsive design, ensuring that users can enjoy a seamless shopping experience across all devices. The integration of Strapi as the backend provides a powerful content management system that makes it easy to manage products, categories, and orders. React JS, with its component-based architecture, ensures that the site is fast, responsive, and easy to maintain. Whether users are browsing through the latest tech gadgets or searching for specific items, Gadget Glitz offers a user-friendly interface that simplifies the shopping process. The combination of modern web technologies ensures that Gadget Glitz not only meets the expectations of today’s tech-savvy consumers but also sets a high standard for online shopping in the tech space.",
   },
   {
-    id: 5,
+    id: 6,
     name: "GoldGym-React JS",
     image: Proj4,
     github: "https://github.com/uzairsaeed34/fitness-react",
@@ -59,7 +69,7 @@ export const data = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Weather app-React JS",
     image: Proj5,
     github: "https://github.com/uzairsaeed34/React-weather-app",
@@ -69,7 +79,7 @@ export const data = [
       "The Weather App is a straightforward and efficient tool built with React JS, designed to provide users with real-time weather information. By utilizing an API from Rapid API, the app delivers accurate weather data for any location worldwide. Users can easily search for cities or regions and receive up-to-date information on temperature, humidity, wind speed, and weather conditions. The app's clean interface and responsive design ensure a seamless experience across all devices, making it a reliable resource for anyone needing quick and accessible weather updates.",
   },
   {
-    id: 7,
+    id: 8,
     name: "TextUtils-React JS",
     image: Proj7,
     github: "https://github.com/uzairsaeed34/TextUtils-react-app",
