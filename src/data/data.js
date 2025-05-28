@@ -1,14 +1,14 @@
 import Proj1 from "../assets/projects/colossalstore.jpeg";
 import Proj3 from "../assets/projects/GadgetGlitz.png";
 import Proj4 from "../assets/projects/goldgym.png";
-import Proj5 from "../assets/projects/weatherapp.png";
+// import Proj5 from "../assets/projects/weatherapp.png";
 import Proj6 from "../assets/projects/car-rental.png";
-import Proj7 from "../assets/projects/textutils.png";
+// import Proj7 from "../assets/projects/textutils.png";
 import Proj2 from "../assets/projects/reicpefinder.png";
 import Proj8 from "../assets/projects/construction.png";
 import Vid1 from "../assets/projects/vid1.mp4";
-import Vid2 from "../assets/projects/vid2.mp4";
-import Vid3 from "../assets/projects/vid3.mp4";
+// import Vid2 from "../assets/projects/vid2.mp4";
+// import Vid3 from "../assets/projects/vid3.mp4";
 import Vid4 from "../assets/projects/vid4.mp4";
 export const data = [
   {
@@ -68,24 +68,24 @@ export const data = [
       "GoldGym is a dynamic fitness platform designed to help users find and follow effective exercise routines. Built using React JS and Material UI, the website offers a clean and intuitive interface that allows users to easily explore a wide variety of exercises. The sleek design, powered by Material UI, ensures that the site is both visually appealing and user-friendly, making it easy for fitness enthusiasts of all levels to navigate. The website integrates an API from Rapid API to deliver comprehensive exercise information. Users can search for exercises based on specific body parts, equipment, or fitness goals, providing them with tailored workout routines that meet their needs. Whether you’re a beginner looking to start a fitness journey or an experienced athlete seeking to enhance your workout regimen, GoldGym offers a wealth of resources to support your fitness goals. The combination of React JS, Material UI, and a powerful API ensures that GoldGym delivers a modern and efficient solution for anyone looking to improve their physical health.",
   },
 
-  {
-    id: 7,
-    name: "Weather app-React JS",
-    image: Proj5,
-    github: "https://github.com/uzairsaeed34/React-weather-app",
-    live: "",
-    video: Vid2,
-    description:
-      "The Weather App is a straightforward and efficient tool built with React JS, designed to provide users with real-time weather information. By utilizing an API from Rapid API, the app delivers accurate weather data for any location worldwide. Users can easily search for cities or regions and receive up-to-date information on temperature, humidity, wind speed, and weather conditions. The app's clean interface and responsive design ensure a seamless experience across all devices, making it a reliable resource for anyone needing quick and accessible weather updates.",
-  },
-  {
-    id: 8,
-    name: "TextUtils-React JS",
-    image: Proj7,
-    github: "https://github.com/uzairsaeed34/TextUtils-react-app",
-    live: "",
-    video: Vid3,
-    description:
-      "Textutils is a versatile text manipulation app built with React JS, designed to provide users with a suite of tools for processing and analyzing text. The app offers a range of features such as converting text to uppercase or lowercase, counting words and characters, and more. React's component-based architecture ensures that the app is highly modular and easy to maintain, providing a fast and responsive user experience. Through Textutils, I have demonstrated my proficiency in React by effectively managing state and implementing various text processing features. The app's clean and intuitive interface showcases my ability to create user-friendly applications while leveraging the power of React to build efficient and scalable web solutions.",
-  },
+  // {
+  //   id: 7,
+  //   name: "Weather app-React JS",
+  //   image: Proj5,
+  //   github: "https://github.com/uzairsaeed34/React-weather-app",
+  //   live: "",
+  //   video: Vid2,
+  //   description:
+  //     "The Weather App is a straightforward and efficient tool built with React JS, designed to provide users with real-time weather information. By utilizing an API from Rapid API, the app delivers accurate weather data for any location worldwide. Users can easily search for cities or regions and receive up-to-date information on temperature, humidity, wind speed, and weather conditions. The app's clean interface and responsive design ensure a seamless experience across all devices, making it a reliable resource for anyone needing quick and accessible weather updates.",
+  // },
+  // {
+  //   id: 8,
+  //   name: "TextUtils-React JS",
+  //   image: Proj7,
+  //   github: "https://github.com/uzairsaeed34/TextUtils-react-app",
+  //   live: "",
+  //   video: Vid3,
+  //   description:
+  //     "Textutils is a versatile text manipulation app built with React JS, designed to provide users with a suite of tools for processing and analyzing text. The app offers a range of features such as converting text to uppercase or lowercase, counting words and characters, and more. React's component-based architecture ensures that the app is highly modular and easy to maintain, providing a fast and responsive user experience. Through Textutils, I have demonstrated my proficiency in React by effectively managing state and implementing various text processing features. The app's clean and intuitive interface showcases my ability to create user-friendly applications while leveraging the power of React to build efficient and scalable web solutions.",
+  // },
 ];

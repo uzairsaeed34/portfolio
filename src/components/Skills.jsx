@@ -9,6 +9,7 @@ import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
 import Mongo from "../assets/mongo.png";
 import SCSS from "../assets/scss.jpeg";
+import pe from "../assets/PE.jpeg";
 
 const Skills = () => {
   const tech = [
@@ -65,6 +66,12 @@ const Skills = () => {
       src: SCSS,
       title: "SCSS",
       style: "shadow-pink-500",
+    },
+    {
+      id: 10,
+      src: pe,
+      title: "Prompt Engineering",
+      style: "shadow-red-500",
     },
   ];
   return (
