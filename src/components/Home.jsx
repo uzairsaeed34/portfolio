@@ -16,14 +16,18 @@ const Home = () => {
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0] ">
           I'm a{" "}
           <span className="animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-4xl sm:text-7xl font-black">
-            Frontend Developer
+            Frontend & Prompt Engineer
           </span>
           .
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
-          I'm a frontend developer passionate about crafting visually appealing
-          and highly responsive user interfaces. My current focus is on building
-          dynamic and interactive web applications.
+          I'm a creative Frontend Developer with a passion for crafting visually
+          appealing, highly responsive user interfaces using modern frameworks
+          like React. In addition to web development, I work as a Prompt
+          Engineer, designing and optimizing AI prompts to improve the
+          performance and accuracy of natural language models. I enjoy building
+          intelligent, interactive digital experiences that merge design,
+          functionality, and AI innovation.
         </p>
         <div>
           <Link to="work" smooth={true} duration={500}>

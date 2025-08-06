@@ -12,20 +12,28 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-          <div className="sm:text-right text-4xl font-bold flex items-center justify-center">
+          <div className="sm:text-left text-4xl font-bold flex items-center justify-center">
             <p>Hi, I'm Uzair, nice to meet you. Please take a look around</p>
           </div>
           <div className="flex items-center justify-center sm:text-1xl">
             <p>
-              Hello, I'm Uzair, a passionate and creative Front-End React
-              Developer. I have a strong background in web development and a
-              deep love for design. I am dedicated to creating user-friendly and
-              visually appealing web experiences. Throughout my career, I've had
-              the privilege of working on a variety of exciting projects, from
-              building responsive e-commerce websites to developing interactive
-              web applications. These experiences have allowed me to hone my
-              skills and stay up-to-date with the latest front-end technologies
-              and trends.
+              I am a passionate and creative Front-End React Developer and
+              Prompt Engineer with a strong background in web development and a
+              growing expertise in Natural Language Processing (NLP). I’m
+              dedicated to building user-friendly, responsive, and visually
+              engaging web experiences while also working on cutting-edge AI
+              technologies to enhance the performance of language models.
+              Throughout my career, I've had the privilege of working on a range
+              of exciting projects — from crafting responsive e-commerce
+              websites and interactive web applications to designing and
+              optimizing AI prompts for real-world applications. My role as a
+              Prompt Engineer allows me to experiment with large language
+              models, refine NLP strategies, and collaborate with
+              cross-functional teams to integrate intelligent solutions into
+              digital workflows. I’m constantly learning, evolving, and pushing
+              boundaries at the intersection of front-end development and AI
+              innovation — with a goal to create smarter, seamless user
+              experiences.
             </p>
           </div>
         </div>
