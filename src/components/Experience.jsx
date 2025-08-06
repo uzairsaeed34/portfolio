@@ -13,7 +13,7 @@ const Experience = () => {
         <div className="p-6">
           <h3 className="text-3xl font-semibold ">Prompt Engineer</h3>
           <p className="mt-2 font-semibold">Hachi AI</p>
-          <p className="mt-2 font-semibold">Nov 2024 - present</p>
+          <p className="mt-2 font-semibold">Oct 2024 - present</p>
           <p className="mt-5 font-medium">
             As a Prompt Engineer and Team Lead, I specialize in designing,
             refining, and optimizing prompts to ensure accurate data extraction
@@ -59,7 +59,7 @@ const Experience = () => {
         <div className="p-6">
           <h3 className="text-3xl font-semibold ">React JS Developer</h3>
           <p className="mt-2 font-semibold">IIFA Tech Software Company</p>
-          <p className="mt-2 font-semibold">Feb 2024 - Nov 2024</p>
+          <p className="mt-2 font-semibold">Feb 2024 - Sep 2024</p>
           <p className="mt-5 font-medium">
             As a Front-End Developer, I played a key role in designing,
             developing, and optimizing modern web applications using ReactJS. I
